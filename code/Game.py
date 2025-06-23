@@ -1,17 +1,17 @@
 import pygame
-from code import Menu
+from code.Menu import Menu
 
 
 class Game:
     def __init__(self):
         pygame.init()
-        window = pygame.display.set_mode((800, 600))
+        self.window = pygame.display.set_mode((2304, 1296))
 
     def run(self):
         while True:
             menu = Menu(self.window)
             menu.run()
-            pass
+
 
             # Check for all events
             # for event in pygame.event.get():
