@@ -18,14 +18,14 @@ class Menu:
         pygame.mixer_music.play(-1)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, "Kill Them All", COLOR_ORANGE, ((WIN_WIDTH / 2), 200))
-            self.menu_text(50, "Arcade Adventure", COLOR_ORANGE, ((WIN_WIDTH / 2), 250))
+            self.menu_text(45, "Kill Them All", COLOR_ORANGE, ((WIN_WIDTH / 2), 100))
+            self.menu_text(40, "Arcade Adventure", COLOR_ORANGE, ((WIN_WIDTH / 2), 150))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(35, MENU_OPTION[i], COLOR_YELLOW, ((WIN_WIDTH / 2), 350 + 35 * i))
+                    self.menu_text(22, MENU_OPTION[i], COLOR_YELLOW, ((WIN_WIDTH / 2), 200 + 25 * i))
                 else:
-                    self.menu_text(35, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 350 + 35 * i))
+                    self.menu_text(22, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 200 + 25 * i))
 
             pygame.display.flip()
 
